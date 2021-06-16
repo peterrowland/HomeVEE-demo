@@ -19,8 +19,7 @@
     "path": "^0.12.7",
     "postcss-sort-media-queries": "^1.1.20",
     "sass": "^1.25.0",
-    "uswds": "^2.8.0",
-    "uswds-gulp": "github:uswds/uswds-gulp"
+    "uswds": "^2.8.0"
   },
   "repository": {
     "type": "git",
