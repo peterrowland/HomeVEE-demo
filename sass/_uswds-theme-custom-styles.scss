@@ -26,3 +26,34 @@ i.e.
    display: inline-flex;
    margin-bottom: .5rem; 
 }
+
+// 
+.usa-header--extended .usa-nav {
+   border-top-width: 0px;
+}
+
+.usa-logo__text {
+   display: inline;   
+}
+.usa-logo a{
+   color: color('primary-darker');
+}
+
+// override max-width to make logo text fit on one line
+@media screen and (min-width: 64em) {
+.usa-header--extended .usa-logo {
+    font-size: 2.13rem;
+    margin: 2rem 0 1.5rem;
+    max-width: 100%;
+   }
+
+.usa-header--extended .usa-nav {
+   border-top: 0px solid #dfe1e2;
+   padding: 0;
+   width: 100%;
+}
+.usa-header+.usa-section, .usa-header+main {
+   border-top: 0px solid #dfe1e2;
+}
+
+}
