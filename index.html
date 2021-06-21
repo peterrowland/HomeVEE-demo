@@ -165,10 +165,34 @@
     </div>
   </section>
   
-  <section class="bg-accent-cool-lighter" id="search">
+  <section class="usa-section bg-accent-cool-lighter" id="search">
     <div class="grid-container">
+
       <h2 class="font-heading-xl">Search research models reports</h2>
+      <label class="usa-label" for="input-type-text">Model Name</label>
+      <input
+        class="usa-input"
+        id="input-type-text"
+        name="input-type-text"
+        type="text"
+      />
+      <button class="usa-button usa-button--primary margin-left-2">Search</button>
+      
+    <div class="usa-checkbox">
+      <input
+        class="usa-checkbox__input"
+        id="check-historical-truth"
+        type="checkbox"
+        name="historical-figures"
+        value="sojourner-truth"
+        checked
+      />
+      <label class="usa-checkbox__label" for="check-historical-truth"
+        >Meets Health & Human Services (HHS) criteria</label
+      >
     </div>
+    </div>
+  </div>
   </section>
 
   <section class="usa-graphic-list usa-section grid-container" id="research"> 
@@ -240,12 +264,30 @@
   </div>
 </section>
 
-<section class="bg-gray-10" id="about">
+<section class="usa-section bg-base-lightest" id="about">
   <div class="grid-container">
-    <h2 class="font-heading-xl">About the HomVEE program</h2>
-    <p>The Department of Health and Human Services launched the Home Visiting Evidence of Effectiveness (HomVEE) review to conduct a thorough and transparent review of early childhood home visiting models. HomVEE provides an assessment of the evidence of effectiveness for early childhood home visiting models that serve families with pregnant women and children from birth to kindergarten entry (that is, up through age 5).</p>
-    <p>The HomVEE review assesses the quality of the research evidence. Information in HomVEE about models and implementation reflects information provided by the developer or other model stakeholders. Questions about the models should be directed to the developers or other model stakeholders. Contact information is provided for each model in the model's implementation profile.</p>
-  </div><!-- containter-->
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-8">
+      <h2 class="font-heading-xl">About the HomVEE program</h2>
+      <p>The Department of Health and Human Services launched the Home Visiting Evidence of Effectiveness (HomVEE) review to conduct a thorough and transparent review of early childhood home visiting models. HomVEE provides an assessment of the evidence of effectiveness for early childhood home visiting models that serve families with pregnant women and children from birth to kindergarten entry (that is, up through age 5).</p>
+      <p>The HomVEE review assesses the quality of the research evidence. Information in HomVEE about models and implementation reflects information provided by the developer or other model stakeholders. Questions about the models should be directed to the developers or other model stakeholders. Contact information is provided for each model in the model's implementation profile.</p>
+      <ul class="usa-list">
+        <li><a href="#">HomVEE executive summary</a></li>
+        <li><a href="#">Implementation guidelines summary across models</a></li>
+        <li><a href="#">Models eligible for Federal Maternal, Infant, and Early Childhood Home Visiting (MIECHV) funding </a></li>
+        <li><a href="#">Search our research database for all manuscripts included in the review</a></li>
+        <li><a href="#">HomVEE methods and standards</a></li>
+      </ul>
+      </div>
+      <div class="tablet:grid-col-4">
+        <iframe width="300" height="222" src="https://www.youtube.com/embed/1lVIkJzJiQA?list=PLC0B3516B242488AD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+          <a class="usa-link" href="https://www.youtube.com/watch?v=1lVIkJzJiQA&list=PLC0B3516B242488AD&index=1">Home Visiting Evidence of Effectiveness Review: Process and Results</a>
+        </p>
+      </div>  
+    </div> 
+  </div>   
+</div><!-- containter-->
 
 </section>
 
@@ -261,19 +303,19 @@
     <nav class="usa-footer__nav">
       <ul class="add-list-reset grid-row grid-gap">
         <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
+          <a class="usa-footer__primary-link" href="javascript:void(0);">Documentation</a>
         </li>
         <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
+          <a class="usa-footer__primary-link" href="javascript:void(0);">Features</a>
         </li>
         <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
+          <a class="usa-footer__primary-link" href="javascript:void(0);">Getting Started</a>
         </li>
         <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
+          <a class="usa-footer__primary-link" href="javascript:void(0);">About us</a>
         </li>
         <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-          <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
+          <a class="usa-footer__primary-link" href="javascript:void(0);">Privacy policy</a>
         </li>
       </ul>
     </nav>
@@ -290,41 +332,7 @@
             <h3 class="usa-footer__logo-heading">Name of Agency</h3>
           </div>
         </div>
-        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-          <div class="usa-footer__social-links grid-row grid-gap-1">
-            <div class="grid-col-auto">
-              <a class="usa-social-link usa-social-link--facebook" href="javascript:void(0);">
-                <span>Facebook</span>
-              </a>
-            </div>
-            <div class="grid-col-auto">
-              <a class="usa-social-link usa-social-link--twitter" href="javascript:void(0);">
-                <span>Twitter</span>
-              </a>
-            </div>
-            <div class="grid-col-auto">
-              <a class="usa-social-link usa-social-link--youtube" href="javascript:void(0);">
-                <span>YouTube</span>
-              </a>
-            </div>
-            <div class="grid-col-auto">
-              <a class="usa-social-link usa-social-link--rss" href="javascript:void(0);">
-                <span>RSS</span>
-              </a>
-            </div>
-          </div>
-          <h3 class="usa-footer__contact-heading">Agency Contact Center</h3>
-          <address class="usa-footer__address">
-            <div class="usa-footer__contact-info grid-row grid-gap">
-              <div class="grid-col-auto">
-                <a href="tel:1-800-555-5555">(800) CALL-GOVT</a>
-              </div>
-              <div class="grid-col-auto">
-                <a href="mailto:info@agency.gov">info@agency.gov</a>
-              </div>
-            </div>
-          </address>
-        </div>
+
       </div>
     </div>
   </div>

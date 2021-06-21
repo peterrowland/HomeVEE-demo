@@ -19,3 +19,10 @@ i.e.
 @include u-padding-right('05');
 ----------------------------------------
 */
+
+// Search Research Models: make longer search bar and not full width
+.usa-combo-box__input, .usa-input, .usa-range, .usa-select, .usa-textarea {
+   max-width: 40em;
+   display: inline-flex;
+   margin-bottom: .5rem; 
+}
