@@ -58,6 +58,26 @@ i.e.
   }
 }
 
+.research-topic {
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent; // hacky thing to prevent jitter when hover border appears
+  border-left-width: 3px;
+  p {
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  // this is a nasty hack to make divs look like anchor links
+  &:hover {
+    border: 1px solid #682669;
+    border-left-width: 3px;
+    color: #682669;
+    cursor: pointer;
+  }
+}
+
 .agency-footer {
   display: flex;
 }
