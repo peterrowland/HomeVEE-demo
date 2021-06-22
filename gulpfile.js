@@ -12,8 +12,7 @@ USWDS SASS GULPFILE
 */
 
 const autoprefixer = require("autoprefixer");
-const autoprefixerOptions = require("./node_modules/uswds-gulp/config/browsers");
-const cssnano = require("cssnano");
+const csso = require("postcss-csso");
 const Fiber = require("fibers");
 const gulp = require("gulp");
 const path = require("path");
@@ -81,11 +80,14 @@ gulp.task("copy-uswds-js", () => {
 gulp.task("build-sass", function(done) {
   var plugins = [
     // Autoprefix
-    autoprefixer(autoprefixerOptions),
+    autoprefixer({
+      cascade: false,
+      grid: true
+    }),
     // Pack media queries
     sortMQ({ sort: "mobile-first" }),
     // Minify
-    cssnano({ autoprefixer: { browsers: autoprefixerOptions } })
+    csso({ forceMediaMerge: false })
   ];
   return (
     gulp
