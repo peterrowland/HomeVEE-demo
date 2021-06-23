@@ -41,19 +41,52 @@ i.e.
 
 // override max-width to make logo text fit on one line
 @media screen and (min-width: 64em) {
-.usa-header--extended .usa-logo {
-    font-size: 2.13rem;
-    margin: 2rem 0 1.5rem;
-    max-width: 100%;
-   }
+  .usa-header--extended .usa-logo {
+      font-size: 2.13rem;
+      margin: 2rem 0 1.5rem;
+      max-width: 100%;
+    }
 
-.usa-header--extended .usa-nav {
-   border-top: 0px solid #dfe1e2;
-   padding: 0;
-   width: 100%;
-}
-.usa-header+.usa-section, .usa-header+main {
-   border-top: 0px solid #dfe1e2;
+  .usa-header--extended .usa-nav {
+    border-top: 0px solid #dfe1e2;
+    padding: 0;
+    width: 100%;
+  }
+
+  .usa-header+.usa-section, .usa-header+main {
+    border-top: 0px solid #dfe1e2;
+  }
 }
 
+.research-topic {
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent; // hacky thing to prevent jitter when hover border appears
+  border-left-width: 3px;
+  p {
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  // this is a nasty hack to make divs look like anchor links
+  &:hover {
+    border: 1px solid #682669;
+    border-left-width: 3px;
+    color: #682669;
+    cursor: pointer;
+  }
+}
+
+.agency-footer {
+  display: flex;
+}
+
+.agency-footer__logo {
+  max-height: 2rem;
+  margin-right: 1rem;
+}
+
+.agency-footer__name {
+  margin: 0;
 }
