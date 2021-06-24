@@ -24,6 +24,10 @@ p {
   line-height: 1.62;
 }
 
+a {
+  color: #0076d6;
+}
+
 // Search Research Models: make longer search bar and not full width
 .usa-combo-box__input, .usa-input, .usa-range, .usa-select, .usa-textarea {
    max-width: 40em;
@@ -82,6 +86,10 @@ p {
   }
 }
 
+.usa-footer {
+  background-color: #f0f0f0;
+}
+
 .agency-footer {
   display: flex;
 }
@@ -93,4 +101,8 @@ p {
 
 .agency-footer__name {
   margin: 0;
+}
+
+.usa-checkbox {
+  background-color: transparent !important;
 }
