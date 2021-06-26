@@ -76,6 +76,7 @@ a {
   p {
     font-weight: bold;
     line-height: 1.5;
+    margin-bottom: 0;
   }
   // this is a nasty hack to make divs look like anchor links
   &:hover {
@@ -105,4 +106,31 @@ a {
 
 .usa-checkbox {
   background-color: transparent !important;
+}
+
+.usa-search--small [type="submit"] {
+  background-image: url("../img/search.svg") !important; // for some reason, we're using the old USWDS img folder
+}
+
+ul.arrow-list {
+  font-size: 18px;
+  padding-left: 0;
+  li {
+    font-weight: bold;
+    list-style-type: none;
+    margin-bottom: 1rem;
+    a {
+      text-decoration: none;
+      &:before {
+        background-image: url("../img/arrow_forward.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+    }
+  }
 }
